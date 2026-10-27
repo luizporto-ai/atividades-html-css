@@ -1,0 +1,143 @@
+/* ========================================
+   ESTILO GERAL DA PÁGINA
+   seletor de tag: vale para o site inteiro
+   ======================================== */
+
+body {
+    background-color: #f2f2f2;        /* cor de fundo */
+    color: #333333;                   /* cor do texto */
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 25px;                     /* box model: margem externa */
+}
+
+/* título principal, centralizado e com a fonte do Google Fonts */
+h1 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #c0392b;
+    font-size: 55px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+
+/* agrupamento de tags: o h2 e o h3 dividem o mesmo espaçamento */
+h2, h3 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #1f3a5f;
+    font-size: 32px;
+}
+
+h3 {
+    color: #7b7b7b;
+    font-size: 19px;
+    font-weight: normal;
+    text-transform: uppercase;        /* deixa o subtítulo em maiúsculo */
+}
+
+p {
+    text-align: justify;
+}
+
+/* ========================================
+   SELETOR DE ID
+   cada um aparece uma vez só na página
+   ======================================== */
+
+#topo {
+    border-bottom: 4px solid #c0392b;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+#rodape {
+    border-top: 1px solid #c0c0c0;
+    margin-top: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+/* ========================================
+   SELETOR DE CLASSE
+   ======================================== */
+
+.subtitulo {
+    text-align: center;
+    font-size: 18px;
+    color: #7b7b7b;
+    font-style: italic;
+}
+
+/* aviso em destaque, com fundo amarelo */
+.aviso {
+    background-color: #ffe9a8;
+    color: #6b4e00;
+    padding: 12px;
+    border-left: 6px solid #e0a800;
+    font-weight: bold;
+}
+
+/* ========================================
+   BOX MODEL
+   a caixa de cada treino usa as 3 partes:
+   margin, padding e border
+   ======================================== */
+
+.treino {
+    background-color: #ffffff;
+    margin-bottom: 25px;              /* 1 - margem (fora da caixa) */
+    padding: 15px 25px;               /* 2 - preenchimento (dentro da caixa) */
+    border-width: 2px;                /* 3 - borda, em três propriedades */
+    border-style: solid;
+    border-color: #c0392b;
+    border-radius: 8px;
+}
+
+/* ========================================
+   ESTILIZAÇÃO DAS LISTAS
+   ======================================== */
+
+/* seletor descendente: só os ul que estão dentro de um .treino */
+.treino ul {
+    list-style-type: square;          /* marcador quadrado */
+    list-style-position: inside;      /* marcador dentro da caixa */
+    padding-left: 0px;
+}
+
+.treino li {
+    padding: 5px;
+    border-bottom: 1px dotted #d5d5d5;
+}
+
+/* lista numerada do aquecimento */
+ol {
+    list-style-type: upper-roman;     /* numera com I, II, III */
+    line-height: 2;
+}
+
+/* ========================================
+   LINKS E EFEITO HOVER
+   ======================================== */
+
+a {
+    color: #c0392b;
+    text-decoration: none;            /* tira o sublinhado */
+    font-weight: bold;
+}
+
+/* quando passa o mouse em cima o link muda de cor */
+a:hover {
+    color: #ffffff;
+    background-color: #c0392b;
+    text-decoration: underline;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
